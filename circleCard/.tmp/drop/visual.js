@@ -9482,6 +9482,7 @@ class Visual {
             .classed("textLabel", true);
     }
     update(options) {
+        let dataView = options.dataViews[0];
         let width = options.viewport.width;
         let height = options.viewport.height;
         this.svg.attr("width", width);

@@ -62,6 +62,7 @@ export class Visual implements IVisual {
     }
 
     public update(options: VisualUpdateOptions) {
+        let dataView: DataView = options.dataViews[0];
         let width: number = options.viewport.width;
         let height: number = options.viewport.height;
         this.svg.attr("width", width);
