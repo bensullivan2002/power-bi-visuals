@@ -60,7 +60,6 @@ export class Visual implements IVisual {
         this.textLabel = this.container.append("text")
             .classed("textLabel", true);
     }
-}
 
     public update(options: VisualUpdateOptions) {
         let width: number = options.viewport.width;
